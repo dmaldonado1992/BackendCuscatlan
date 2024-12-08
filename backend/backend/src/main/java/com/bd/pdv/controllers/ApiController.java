@@ -75,6 +75,12 @@ public class ApiController {
         return new ResponseEntity(resp, HttpStatus.OK);
     }
 
+    @PostMapping("/order")
+    public ResponseEntity<CustomResponse<com.bd.pdv.models.entity.Order>> post(@Valid @RequestBody com.bd.pdv.models.entity.Order order) {
+        CustomResponse<com.bd.pdv.models.entity.Order> resp = ordenService.save(order);
+        return new ResponseEntity(resp, HttpStatus.OK);
+    }
+
 
     @PostMapping("/callPts")
     public Product callPts(@Valid @RequestBody Product req){
