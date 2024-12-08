@@ -14,7 +14,8 @@ public class OrderDetail {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "orderId", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "orderId")
+    @JsonBackReference
     private Order orderId;
 
     @NotNull
@@ -69,4 +70,14 @@ public class OrderDetail {
     public void setProductId(int productId) {
         this.productId = productId;
     }
+
+    public Order getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Order orderId) {
+        this.orderId = orderId;
+    }
+
+
 }

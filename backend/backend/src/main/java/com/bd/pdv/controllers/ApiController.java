@@ -3,6 +3,7 @@ package com.bd.pdv.controllers;
 import com.bd.pdv.dto.CustomResponse;
 import com.bd.pdv.dto.Product;
 import com.bd.pdv.models.entity.Order;
+import com.bd.pdv.models.entity.OrderDetail;
 import com.bd.pdv.services.IApiService;
 import com.bd.pdv.services.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,7 +77,13 @@ public class ApiController {
     }
 
     @PostMapping("/order")
-    public ResponseEntity<CustomResponse<com.bd.pdv.models.entity.Order>> post(@Valid @RequestBody com.bd.pdv.models.entity.Order order) {
+    public ResponseEntity<Order> createOrder(@RequestBody Order order) {
+        for (OrderDetail detail : order.getOrderDetail()) {
+            detail.setOrderId(order);
+        }
+            // Asocia cada detalle con la orden\
+            //
+
         CustomResponse<com.bd.pdv.models.entity.Order> resp = ordenService.save(order);
         return new ResponseEntity(resp, HttpStatus.OK);
     }
