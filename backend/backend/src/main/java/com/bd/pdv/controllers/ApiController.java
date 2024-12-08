@@ -20,8 +20,20 @@ public class ApiController {
     private IApiService ptsService;
 
     @GetMapping("/products")
-    public List<Product> products(){
-        return ptsService.getProducts(null);
+    public ResponseEntity<CustomResponse<List<Product>>> products(){
+
+        List<Product> resp = ptsService.getProducts(null);
+        CustomResponse<List<Product>> response = new CustomResponse<>();
+        response.setOk(true);
+        response.setData(resp);
+
+        if (resp == null) {
+            response.setOk(false);
+            response.setMessage("No se encontraron registros");
+            response.setData(null);  // No hay datos ya que no se encontró el producto
+            return new ResponseEntity(response, HttpStatus.NOT_FOUND);  // 404 - Not Found
+        }
+        return new ResponseEntity(response, HttpStatus.OK);
     }
 
 
@@ -29,8 +41,20 @@ public class ApiController {
     public ResponseEntity<CustomResponse<List<Product>>> getById(@PathVariable("id") int id){
         Product product = new Product();
         product.setId(String.valueOf(id));
-        Optional<Product> resp = Optional.ofNullable(ptsService.getProductsById(product));
-        return new ResponseEntity(resp, HttpStatus.OK);
+        Product resp = ptsService.getProductsById(product);
+
+        CustomResponse<Product> response = new CustomResponse<>();
+        response.setOk(true);
+        response.setData(resp);
+
+        if (resp == null) {
+            response.setOk(false);
+            response.setMessage("No se encontraron registros");
+            response.setData(null);  // No hay datos ya que no se encontró el producto
+            return new ResponseEntity(response, HttpStatus.NOT_FOUND);  // 404 - Not Found
+        }
+
+        return new ResponseEntity(response, HttpStatus.OK);  // 404 - Not Found
     }
 
     @PostMapping("/callPts")

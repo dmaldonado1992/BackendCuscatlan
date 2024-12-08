@@ -24,19 +24,9 @@ public class ApiServiceImpl implements IApiService {
     @Override
     public List<Product> getProducts(Product product) {
         System.out.println("Products");
+        String responseJson = null;
         HashMap<String,String> headers=new HashMap<String,String>();
         headers.put("Content-Type","application/json; charset=UTF-8");
-        // headers.put("Authorization",token);
-
-        ObjectMapper mapper = new ObjectMapper();
-        String responseJson = null;
-        try {
-            responseJson = mapper.writeValueAsString(product);
-            //Se desactiva transaction porque no se utiliza en la peticion
-            responseJson = responseJson.replace("Transaction","TransactionDisabled");
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
 
         List<Product> resp=(List<Product>) HttpRequestPdv.getList(urlApi ,responseJson,headers);
 

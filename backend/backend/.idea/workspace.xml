@@ -5,180 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ff9a83c-fb49-44fb-a47a-90854fc98e58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/PdvApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/CustomResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/CustomResponseServiceFel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/dao/IProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/dao/IRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/PrimaryUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/MainSecutiry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/JwtDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/NewUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/jwt/JwtEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/jwt/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/jwt/JwtTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IApiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/UtilService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/libs/ConnectorFel.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bd/pdv/PdvApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/PdvApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/AuthController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/CustomResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/CustomResponseServiceFel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/UserRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/dao/IProductDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/dao/IRoleDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/dao/IUserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/PrimaryUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/MainSecutiry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/JwtDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/LoginUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/NewUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/jwt/JwtEntryPoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/jwt/JwtProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/jwt/JwtTokenFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/IApiService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/IProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/IRoleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/ApiServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/ProductServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/RoleServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/UserDetailsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/UtilService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/libs/ConnectorFel.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/bd/pdv/PdvApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/.idea/pdv.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/PdvApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/controllers/ApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/controllers/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/controllers/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/dto/CustomResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/dto/CustomResponseServiceFel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/dto/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/dto/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/dto/UserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/dao/IProductDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/dao/IRoleDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/dao/IUserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/entity/PrimaryUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/models/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/MainSecutiry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/dto/JwtDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/dto/LoginUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/dto/NewUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/jwt/JwtEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/jwt/JwtProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/security/jwt/JwtTokenFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/IApiService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/IProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/IRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/impl/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/impl/RoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/impl/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/services/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/java/com/bd/pdv/utils/UtilService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/main/resources/libs/ConnectorFel.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/src/test/java/com/bd/pdv/PdvApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/PdvApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/controllers/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/controllers/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/controllers/PtsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/controllers/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/dto/CustomResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/dto/CustomResponseServiceFel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/dto/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/dto/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/dto/UserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/dao/IProductDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/dao/IRoleDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/dao/IUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/entity/PrimaryUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/entity/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/entity/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/models/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/MainSecutiry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/dto/JwtDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/dto/LoginUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/dto/NewUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/jwt/JwtEntryPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/jwt/JwtProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/security/jwt/JwtTokenFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/IProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/IPtsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/IRoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/impl/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/impl/PtsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/impl/RoleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/impl/UserDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/services/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/utils/HttpRequestPdv$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/utils/HttpRequestPdv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/com/bd/pdv/utils/UtilService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/classes/libs/ConnectorFel.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pdv/pdv/target/test-classes/com/bd/pdv/PdvApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/CustomResponseServiceFel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/JwtDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/JwtDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/PdvApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/CustomResponseServiceFel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/JwtDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/JwtDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/ApiServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/ApiServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733632113033</updated>
       <workItem from="1733632114488" duration="144000" />
-      <workItem from="1733632627557" duration="138000" />
+      <workItem from="1733632627557" duration="5061000" />
     </task>
     <servers />
   </component>
@@ -255,5 +98,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="rest.getBody()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

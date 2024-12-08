@@ -40,6 +40,7 @@ public class HttpRequestPdv {
             }
             HttpEntity<String> request = new HttpEntity<String>(body, h);
             ResponseEntity rest=http.getForEntity(url, Product.class);
+
             return (T) rest.getBody();
         }
         catch (Exception e){

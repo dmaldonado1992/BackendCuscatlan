@@ -17,15 +17,8 @@ public class Product {
     @JsonProperty(value="image", required=false)
     private String image;
 
-
-    @JsonProperty(value="Error", required=false)
-    private boolean error;
-    @JsonProperty(value="Message", required=false)
-    private String message;
-
     public Product() {
     }
-
 
     public Double getPrice() {
         return price;
@@ -49,22 +42,6 @@ public class Product {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public boolean isError() {
-        return error;
-    }
-
-    public void setError(boolean error) {
-        this.error = error;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
     }
 
     public String getId() {

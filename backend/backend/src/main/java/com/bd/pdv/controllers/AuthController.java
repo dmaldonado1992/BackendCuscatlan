@@ -80,7 +80,7 @@ public class AuthController {
 
         String jwt = jwtProvider.generateToken(authentication);
         PrimaryUser userDetails = (PrimaryUser) authentication.getPrincipal();
-        JwtDto jwtDto = new JwtDto(jwt, userDetails.getName(), loginUser.getUsername(), userDetails.getAuthorities(), userDetails.getId());
+        JwtDto jwtDto = new JwtDto(jwt, userDetails.getName(), loginUser.getUsername(), userDetails.getId());
 
         return new ResponseEntity(jwtDto, HttpStatus.OK);
     }
