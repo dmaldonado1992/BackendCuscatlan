@@ -18,7 +18,7 @@ public class OrderDetail {
     private Order orderId;
 
     @NotNull
-    private float productId;
+    private int productId;
 
     @NotNull
     private float quantity;
@@ -62,11 +62,11 @@ public class OrderDetail {
         this.total = total;
     }
 
-    public float getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(float productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 }

@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ff9a83c-fb49-44fb-a47a-90854fc98e58" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/IOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/IOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/OrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +71,7 @@
       <updated>1733632113033</updated>
       <workItem from="1733632114488" duration="144000" />
       <workItem from="1733632627557" duration="16512000" />
-      <workItem from="1733656388712" duration="619000" />
+      <workItem from="1733656388712" duration="688000" />
     </task>
     <servers />
   </component>
