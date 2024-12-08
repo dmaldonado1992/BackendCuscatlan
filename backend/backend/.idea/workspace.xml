@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ff9a83c-fb49-44fb-a47a-90854fc98e58" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/dao/IOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/IOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/CustomResponseServiceFel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/dto/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/JwtDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/security/dto/JwtDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/ApiServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/utils/HttpRequestPdv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/PdvApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bd/pdv/models/entity/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/CustomResponseServiceFel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/dto/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/JwtDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/security/dto/JwtDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/ApiServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/services/impl/ApiServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/utils/HttpRequestPdv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/controllers/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bd/pdv/models/entity/Role.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +45,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bd.pdv.models.entity" />
+      <recent name="com.bd.pdv.controllers" />
+      <recent name="com.bd.pdv.services.impl" />
+      <recent name="com.bd.pdv.services" />
+      <recent name="com.bd.pdv.models.dao" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.PdvApplication">
     <configuration name="PdvApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="backend" />
@@ -77,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733632113033</updated>
       <workItem from="1733632114488" duration="144000" />
-      <workItem from="1733632627557" duration="5061000" />
+      <workItem from="1733632627557" duration="16512000" />
     </task>
     <servers />
   </component>
@@ -129,8 +133,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java</url>
-          <line>56</line>
+          <line>62</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/OrderServiceImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/services/impl/OrderServiceImpl.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bd/pdv/controllers/ApiController.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

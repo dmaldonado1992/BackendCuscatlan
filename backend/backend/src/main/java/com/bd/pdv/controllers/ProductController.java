@@ -2,6 +2,7 @@ package com.bd.pdv.controllers;
 
 import com.bd.pdv.dto.CustomResponse;
 import com.bd.pdv.models.entity.Product;
+import com.bd.pdv.services.IOrderService;
 import com.bd.pdv.services.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,9 @@ public class ProductController {
 
     @Autowired
     private IProductService service;
+
+    @Autowired
+    private IOrderService serviceOrden;
 
     @GetMapping("/product")
     public ResponseEntity<CustomResponse<List<Product>>> getAll(){

@@ -30,9 +30,6 @@ public class Role {
     @Column(name="update_user")
     private Integer updateUser;
 
-    /*@ManyToMany(mappedBy = "users")
-    private Set<User> users = new HashSet<>();
-*/
 
     public Role() {
     }

@@ -2,11 +2,14 @@ package com.bd.pdv.controllers;
 
 import com.bd.pdv.dto.CustomResponse;
 import com.bd.pdv.dto.Product;
+import com.bd.pdv.models.entity.Order;
 import com.bd.pdv.services.IApiService;
+import com.bd.pdv.services.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 
 import javax.validation.Valid;
 import java.util.List;
@@ -18,6 +21,9 @@ public class ApiController {
 
     @Autowired
     private IApiService ptsService;
+
+    @Autowired
+    private IOrderService ordenService;
 
     @GetMapping("/products")
     public ResponseEntity<CustomResponse<List<Product>>> products(){
@@ -56,6 +62,19 @@ public class ApiController {
 
         return new ResponseEntity(response, HttpStatus.OK);  // 404 - Not Found
     }
+
+    @GetMapping("/order/{id}")
+    @ResponseBody
+    public ResponseEntity<CustomResponse<List<Order>>> getByID(@PathVariable("id") long id){
+        return new ResponseEntity(ordenService.findById(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/order")
+    public ResponseEntity<List<Order>> getAll(){
+        List<Order> resp = ordenService.findAll();
+        return new ResponseEntity(resp, HttpStatus.OK);
+    }
+
 
     @PostMapping("/callPts")
     public Product callPts(@Valid @RequestBody Product req){
