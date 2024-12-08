@@ -78,12 +78,6 @@ public class ApiController {
 
     @PostMapping("/order")
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
-        for (OrderDetail detail : order.getOrderDetail()) {
-            detail.setOrderId(order);
-        }
-            // Asocia cada detalle con la orden\
-            //
-
         CustomResponse<com.bd.pdv.models.entity.Order> resp = ordenService.save(order);
         return new ResponseEntity(resp, HttpStatus.OK);
     }

@@ -10,6 +10,8 @@ import java.util.Optional;
 public interface IOrderService {
 
     public Optional<Order> findById(Long id);
-    public  List<Order> findAll();
+    public List<Order> findAll();
     public CustomResponse<Order> save(Order order);
+
+
 }
