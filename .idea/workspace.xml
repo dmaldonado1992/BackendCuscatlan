@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7620869-1819-4799-9efe-17f5077a21a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pdv/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdv/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdv/.idea/pdv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdv/pdv/src/main/java/com/bd/pdv/controllers/PumpNozzleConfigurationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pdv/pdv/src/main/java/com/bd/pdv/controllers/PumpNozzleConfigurationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdv/pdv/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pdv/pdv/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pdv/pdv" />
+  </component>
+  <component name="ProjectId" id="25AqAXbKLq4VwkgM9uZZURug7kl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7620869-1819-4799-9efe-17f5077a21a4" name="Changes" comment="" />
+      <created>1644980100407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644980100407</updated>
+      <workItem from="1644980102299" duration="355000" />
+      <workItem from="1646975160640" duration="36000" />
+      <workItem from="1657684320019" duration="84000" />
+      <workItem from="1660674171010" duration="22000" />
+      <workItem from="1661811132813" duration="83000" />
+      <workItem from="1733551079404" duration="451000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
