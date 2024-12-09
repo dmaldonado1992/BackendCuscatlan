@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class PrimaryUser implements UserDetails {
+public class AuthUser implements UserDetails {
     private Long id;
     private String name;
     private String username;
@@ -16,7 +16,7 @@ public class PrimaryUser implements UserDetails {
     private boolean active;
     private Collection<? extends GrantedAuthority>  authorities;
 
-    public PrimaryUser(Long id, String name, String username, String password, boolean active, Collection<? extends GrantedAuthority> authorities) {
+    public AuthUser(Long id, String name, String username, String password, boolean active, Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.name = name;
         this.username = username;
@@ -25,9 +25,9 @@ public class PrimaryUser implements UserDetails {
         this.authorities = authorities;
     }
 
-    public static PrimaryUser build(User user){
+    public static AuthUser build(User user){
         List<GrantedAuthority> auths = user.getRoles().stream().map(rol -> new SimpleGrantedAuthority(rol.getName())).collect(Collectors.toList());
-        return new PrimaryUser(user.getId(), user.getName(), user.getUsername(), user.getPassword(), user.isActive(), auths);
+        return new AuthUser(user.getId(), user.getName(), user.getUsername(), user.getPassword(), user.isActive(), auths);
     }
 
     @Override

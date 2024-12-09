@@ -1,12 +1,11 @@
 package com.bd.pdv.services;
 
-import com.bd.pdv.dto.CustomResponse;
-import com.bd.pdv.models.entity.Product;
+import com.bd.pdv.dto.Product;
 
 import java.util.List;
 
 public interface IProductService {
-    public CustomResponse<List<Product>> findAll();
 
-    public CustomResponse<Product> save(Product product);
+    public List<Product> getProducts(Product product);
+    public Product getProductsById(Product product);
 }

@@ -1,6 +1,6 @@
 package com.bd.pdv.security.jwt;
 
-import com.bd.pdv.models.entity.PrimaryUser;
+import com.bd.pdv.models.entity.AuthUser;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,10 +21,10 @@ public class JwtProvider {
     private int expiration;
 
     public String generateToken(Authentication authentication){
-        PrimaryUser primaryUser = (PrimaryUser) authentication.getPrincipal();
+        AuthUser authUser = (AuthUser) authentication.getPrincipal();
 
         return Jwts.builder()
-                .setSubject(primaryUser.getUsername())
+                .setSubject(authUser.getUsername())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + expiration * 1000))
                 .signWith(SignatureAlgorithm.HS512, secret)

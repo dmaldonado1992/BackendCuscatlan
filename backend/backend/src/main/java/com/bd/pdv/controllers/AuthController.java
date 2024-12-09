@@ -1,7 +1,7 @@
 package com.bd.pdv.controllers;
 
 import com.bd.pdv.dto.Message;
-import com.bd.pdv.models.entity.PrimaryUser;
+import com.bd.pdv.models.entity.AuthUser;
 import com.bd.pdv.models.entity.Role;
 import com.bd.pdv.models.entity.User;
 import com.bd.pdv.security.dto.JwtDto;
@@ -44,7 +44,6 @@ public class AuthController {
     @Autowired
     private JwtProvider jwtProvider;
 
-
     @PostMapping("/user")
     public ResponseEntity<?> newUser(@Valid @RequestBody NewUser newUser, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
@@ -55,7 +54,6 @@ public class AuthController {
         }
 
         User user = new User(newUser.getName(), newUser.getUsername(), newUser.getDescription(), newUser.getPhone(), passwordEncoder.encode(newUser.getPassword()), newUser.getStoreId(), newUser.getCreationUser());
-
 
         Set<Role> roles = new HashSet<>();
         for(String role: newUser.getRoles()){
@@ -79,7 +77,7 @@ public class AuthController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
         String jwt = jwtProvider.generateToken(authentication);
-        PrimaryUser userDetails = (PrimaryUser) authentication.getPrincipal();
+        AuthUser userDetails = (AuthUser) authentication.getPrincipal();
         JwtDto jwtDto = new JwtDto(jwt, userDetails.getName(), loginUser.getUsername(), userDetails.getId());
 
         return new ResponseEntity(jwtDto, HttpStatus.OK);

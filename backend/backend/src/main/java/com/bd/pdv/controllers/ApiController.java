@@ -2,9 +2,10 @@ package com.bd.pdv.controllers;
 
 import com.bd.pdv.dto.CustomResponse;
 import com.bd.pdv.dto.Product;
+import com.bd.pdv.models.entity.Client;
 import com.bd.pdv.models.entity.Order;
-import com.bd.pdv.models.entity.OrderDetail;
-import com.bd.pdv.services.IApiService;
+import com.bd.pdv.services.IProductService;
+import com.bd.pdv.services.IClientService;
 import com.bd.pdv.services.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,24 +13,25 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
 public class ApiController {
 
     @Autowired
-    private IApiService ptsService;
+    private IProductService productService;
 
     @Autowired
     private IOrderService ordenService;
 
+    @Autowired
+    private IClientService clientService;
+
     @GetMapping("/products")
     public ResponseEntity<CustomResponse<List<Product>>> products(){
 
-        List<Product> resp = ptsService.getProducts(null);
+        List<Product> resp = productService.getProducts(null);
         CustomResponse<List<Product>> response = new CustomResponse<>();
         response.setOk(true);
         response.setData(resp);
@@ -43,12 +45,11 @@ public class ApiController {
         return new ResponseEntity(response, HttpStatus.OK);
     }
 
-
     @GetMapping("/products/{id}")
     public ResponseEntity<CustomResponse<List<Product>>> getById(@PathVariable("id") int id){
         Product product = new Product();
         product.setId(String.valueOf(id));
-        Product resp = ptsService.getProductsById(product);
+        Product resp = productService.getProductsById(product);
 
         CustomResponse<Product> response = new CustomResponse<>();
         response.setOk(true);
@@ -82,21 +83,36 @@ public class ApiController {
         return new ResponseEntity(resp, HttpStatus.OK);
     }
 
+    @PutMapping("/order")
+    public ResponseEntity<Order> updateOrder(@RequestBody Order order) {
+        CustomResponse<com.bd.pdv.models.entity.Order> resp = ordenService.save(order);
+        return new ResponseEntity(resp, HttpStatus.OK);
+    }
 
-    @PostMapping("/callPts")
-    public Product callPts(@Valid @RequestBody Product req){
-        return ptsService.callPts(req);
+    @DeleteMapping("/order")
+    public ResponseEntity<Order> deleteOrder(@RequestBody Order order) {
+        CustomResponse<com.bd.pdv.models.entity.Order> resp = ordenService.delete(order);
+        return new ResponseEntity(resp, HttpStatus.OK);
+    }
+
+    @PostMapping("/order/applyPay")
+    public ResponseEntity<CustomResponse<List<Client>>> applyPay(@RequestBody Order order){
+        CustomResponse<com.bd.pdv.models.entity.Order> resp = ordenService.applyPay(order);
+        return new ResponseEntity(resp, HttpStatus.OK);
+    }
+
+    @GetMapping("/client/{id}")
+    @ResponseBody
+    public ResponseEntity<CustomResponse<List<Client>>> getByID(@PathVariable("id") int id){
+        return new ResponseEntity(clientService.findById(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/client")
+    public ResponseEntity<List<Client>> getClients(){
+        List<Client> resp = clientService.findAll();
+        return new ResponseEntity(resp, HttpStatus.OK);
     }
 
 
-    @PostMapping("/setPrices")
-    public Product setPrices(@Valid @RequestBody Product req){
-        return ptsService.callPts(req);
-    }
-
-    @PostMapping("/setPumpNozzlesConfiguration")
-    public Product setPumpNozzlesConfiguration(@Valid @RequestBody Product req){
-        return ptsService.callPts(req);
-    }
 
 }

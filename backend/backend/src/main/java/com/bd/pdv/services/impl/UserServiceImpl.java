@@ -55,10 +55,6 @@ public class UserServiceImpl implements IUserService {
                     break;
                 }
             }
-            if(isVendor){
-
-                result.add(user);
-            }
         }
         return result;
     }

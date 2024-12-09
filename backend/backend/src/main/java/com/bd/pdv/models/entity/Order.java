@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @Entity
@@ -31,6 +32,10 @@ public class Order {
     @OneToMany(mappedBy = "orderId", fetch = FetchType.LAZY)
     @JsonManagedReference
     private Set<OrderDetail> orderDetail = new HashSet<>();
+
+    @Transient
+    private Optional<Client> clientDetail;
+
 
     public Order() {
     }
@@ -98,5 +103,13 @@ public class Order {
 
     public void setOrderDetail(Set<OrderDetail> details) {
         this.orderDetail = details;
+    }
+
+    public Optional<Client> getClientDetail() {
+        return clientDetail;
+    }
+
+    public void setClientDetail( Optional<Client> clientDetail) {
+        this.clientDetail = clientDetail;
     }
 }

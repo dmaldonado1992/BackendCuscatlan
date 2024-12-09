@@ -28,16 +28,16 @@ public class OrderDetail {
     private float total;
 
     @Transient
-    private String title;
+    private String title  = "";
 
     @Transient
-    private String description;
+    private String description  = "";
 
     @Transient
-    private String category;
+    private String category = "";
 
     @Transient
-    private String image;
+    private String image = "";
 
 
 

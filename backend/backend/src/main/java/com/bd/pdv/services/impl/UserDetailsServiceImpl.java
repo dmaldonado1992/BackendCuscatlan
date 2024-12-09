@@ -1,6 +1,6 @@
 package com.bd.pdv.services.impl;
 
-import com.bd.pdv.models.entity.PrimaryUser;
+import com.bd.pdv.models.entity.AuthUser;
 import com.bd.pdv.models.entity.User;
 import com.bd.pdv.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         User user = userService.getByUsername(s).get();
-        return PrimaryUser.build(user);
+        return AuthUser.build(user);
     }
 
 
